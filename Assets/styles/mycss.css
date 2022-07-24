@@ -1,0 +1,98 @@
+
+@font-face {
+	font-family: 'Bellota-BoldItalic';
+	src: url('../fonts/Bellota-BoldItalic.otf');
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.card-body .button{
+background:#7D1E6A;
+color:#fff;
+border: none;
+padding: 5px;
+width: 90%;
+border-radius: 4px;
+
+}
+
+:root {
+  --pmcolor: #f1f0f9;
+  --sdcolor: #fefefe;
+  --ttcolor: #2e2e2e;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: var(--ttcolor);
+  background-color: #9A86A4;
+}
+
+.card_friends a {
+  color: inherit;
+  text-decoration: none;
+	cursor: pointer;
+}
+
+section {
+  width: 90%;
+  margin: 2rem auto;
+  display: grid;
+	grid-template-columns: auto auto auto auto;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+}
+
+.card {
+  width: 100%;
+  cursor: default;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  background-color: #7F8487;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.card-img {
+  width: 90%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.25rem;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-img figcaption {
+  background-color: var(--ttcolor);
+  color: var(--sdcolor);
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.card-title {
+  text-transform: capitalize;
+  margin: 0.75rem 0;
+}
